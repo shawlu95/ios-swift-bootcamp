@@ -1,3 +1,7 @@
+protocol CanFly {
+    func fly()
+}
+
 class Bird {
     var isFemale = true
     
@@ -6,13 +10,14 @@ class Bird {
             print("Birds can lay eggs")
         }
     }
-    
-    func fly() {
-        print("Birds can fly")
-    }
 }
 
-class Eagle: Bird {
+// protocol can be adopted by class, struct, enum
+class Eagle: Bird, CanFly {
+    func fly() {
+        print("Eagle can fly")
+    }
+    
     func soar() {
         print("Eagles soar")
     }
@@ -24,29 +29,23 @@ class Penguin: Bird {
     }
 }
 
-class Airplane {
+class Airplane: CanFly {
     func fly() {
         print("Airplanes can fly")
     }
 }
 
 struct FlyingMusuem {
-    func flyingDemo(flyingObject: Bird) {
+    func flyingDemo(flyingObject: CanFly) {
         flyingObject.fly()
     }
 }
 
-
 let eagle = Eagle()
-eagle.fly()
-eagle.layEgg()
-eagle.soar()
-
 let penguin = Penguin()
-penguin.fly()
-penguin.layEgg()
-penguin.swim()
+let airplane = Airplane()
 
 let museum = FlyingMusuem()
 museum.flyingDemo(flyingObject: eagle)
-museum.flyingDemo(flyingObject: penguin)
+//museum.flyingDemo(flyingObject: penguin)
+museum.flyingDemo(flyingObject: airplane)
