@@ -2,6 +2,13 @@ protocol CanFly {
     func fly()
 }
 
+// extend a protocol with default implementation
+extension CanFly {
+    func fly() {
+        print("default fly implementation. nothing special")
+    }
+}
+
 class Bird {
     var isFemale = true
     
@@ -30,9 +37,6 @@ class Penguin: Bird {
 }
 
 class Airplane: CanFly {
-    func fly() {
-        print("Airplanes can fly")
-    }
 }
 
 struct FlyingMusuem {
