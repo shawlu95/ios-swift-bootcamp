@@ -12,3 +12,22 @@ func mult(n1: Int, n2: Int) -> Int {
 
 print(calculator(n1: 2, n2: 3, operation: add))
 print(calculator(n1: 2, n2: 3, operation: mult))
+
+calculator(n1: 2, n2: 3, operation: {(n1: Int, n2: Int) -> Int in
+    return n1 * n2
+})
+
+// infer type
+calculator(n1: 2, n2: 3, operation: {(n1, n2) in
+    return n1 * n2
+})
+
+// omit return
+calculator(n1: 2, n2: 3, operation: {(n1, n2) in n1 * n2})
+
+// anonymous param
+calculator(n1: 2, n2: 3, operation: {$0 * $1})
+
+// trailing closure, if last param is closure
+calculator(n1: 2, n2: 3) {$0 * $1}
+
