@@ -24,3 +24,5 @@ build/
 *~.nib
 *.xcuserstate
 protocol-demo/protocol-demo.xcodeproj/project.xcworkspace/xcuserdata/shaw.lu.xcuserdatad/UserInterfaceState.xcuserstate
+
+.env
