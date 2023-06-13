@@ -1,5 +1,7 @@
 ## Swift Language
 
+- Swift UI makes it easier to make cross-Apple platform apps
+
 ### Class vs Struct
 
 - struct is preferred, simpler
