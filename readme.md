@@ -22,4 +22,7 @@ cd Documents/proj/Flash-Chat-iOS13
 pod init
 pod install
 # use `Flash Chat iOS13.xcworkspace` for this project from now on.
+
+# remove a pod, delete pod from Pod file and run
+pod install
 ```
