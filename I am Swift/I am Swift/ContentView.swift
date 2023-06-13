@@ -11,19 +11,18 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color(.systemTeal)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .edgesIgnoringSafeArea(.all)
             VStack {
-                Text("I am Broke!")
+                Text("I Am Broke!")
                     .font(.system(size: 40))
                     .fontWeight(.bold)
-                .foregroundColor(Color.white)
+                    .foregroundColor(Color.white)
                 Image("diamond")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 200, height: 200, alignment: .center)
             }
         }
-        .padding()
     }
 }
 
