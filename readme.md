@@ -11,6 +11,8 @@
 
 ### Resources
 
+- https://flatuicolors.com/palette/defo
+- https://fonts.google.com
 - https://cocoapods.org
 
 ```bash
