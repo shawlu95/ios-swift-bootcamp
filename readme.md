@@ -9,6 +9,18 @@
 - struct is passed by value
 - class instance is passed by reference
 
+### Access Level
+
+- private
+- fileprivate
+- internal
+- public
+- open
+
+App developer deals with 1, 2, 3
+
+SDK developer deals with 4, 5
+
 ### Resources
 
 - https://flatuicolors.com/palette/defo
