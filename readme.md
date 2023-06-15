@@ -14,6 +14,9 @@
 - https://flatuicolors.com/palette/defo
 - https://fonts.google.com
 - https://cocoapods.org
+- https://academy.realm.io/posts/nspredicate-cheatsheet/
+- https://realm.io/
+- https://maildrop.cc/
 
 ```bash
 # install cocopods
