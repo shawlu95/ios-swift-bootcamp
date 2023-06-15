@@ -1,7 +1,25 @@
 import Foundation
 
 // stored properties
-let pizzaInInches: Int = 16
+var pizzaInInches: Int = 10 {
+    willSet {
+        // triggered before the value is set
+        print(newValue)
+    }
+    didSet {
+        // triggered after the value is set
+        print(oldValue)
+        if pizzaInInches >= 18 {
+            print("Invalid size specified, pizzaInInches set to 18.")
+            pizzaInInches = 18
+        }
+    }
+}
+pizzaInInches = 8
+
+pizzaInInches = 100
+print(pizzaInInches)
+
 var numberOfPeople: Int = 12
 
 // computed properties has to be var
