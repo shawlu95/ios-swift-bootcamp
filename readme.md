@@ -6,12 +6,14 @@
 
 - struct is preferred, simpler
 - struct is immutable, when mutated, a new struct is created
-- struct is passed by value
-- class instance is passed by reference
+- struct is passed by value (value type)
+- struct cannot be subclassed, no inheritance
+- struct lives in stack, class lives in heap
+- class instance is passed by reference (reference type)
 
 ### Access Level
 
-- private
+- private: should be default
 - fileprivate
 - internal
 - public
