@@ -65,3 +65,24 @@ numberOfPizza = 8
 print(numberOfPeople)
 
 
+//MARK: - Exercise
+var area: Float = 0.0
+var width: Float = 1.5
+var height: Float = 2.3
+let areaCoveredPerBucket: Float = 1.5
+
+var bucketOfPaint: Int {
+    get {
+        area = width * height
+        let numberOfBuckets = area / areaCoveredPerBucket
+        return Int(ceilf(numberOfBuckets))
+    }
+    set {
+        area = Float(newValue) * areaCoveredPerBucket
+        print("This amount of paint can cover an area of \(area)")
+    }
+}
+
+print(bucketOfPaint)
+
+bucketOfPaint = 8
