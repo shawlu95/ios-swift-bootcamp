@@ -25,6 +25,12 @@ App developer deals with 1, 2, 3
 
 SDK developer deals with 4, 5
 
+### Convert a Caffee Model
+
+```bash
+pip3 install -U coremltools
+```
+
 ### Resources
 
 - https://flatuicolors.com/palette/defo
